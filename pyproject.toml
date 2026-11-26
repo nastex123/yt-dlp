@@ -46,6 +46,9 @@ dynamic = ["version"]
 dependencies = []
 
 [project.optional-dependencies]
+terminal = [
+    "ytmusicapi",
+]
 default = [
     "brotli ; implementation_name == 'cpython' and sys_platform != 'ios'",
     "brotlicffi ; implementation_name != 'cpython'",

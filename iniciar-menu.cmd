@@ -4,7 +4,7 @@ cd /d "%~dp0"
 echo Iniciando el menu de yt-dlp...
 python --version >nul 2>&1
 if errorlevel 1 goto python_missing
-python -u "%~dp0menu_yt_dlp.py"
+python -u "%~dp0terminal_app.py"
 if errorlevel 1 echo El menu termino con un error. Revisa el mensaje anterior.
 goto finish
 :python_missing
